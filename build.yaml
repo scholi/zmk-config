@@ -22,18 +22,3 @@ include:
     shield: corne_left
   - board: nrf52840_m2
     shield: corne_right
-include:
-  - board: nrf52840_m2
-    shield: corne_left
-  - board: nrf52840_m2
-    shield: corne_right
-include:
-  - board: nrf52840_m2
-    shield: corne_left
-  - board: nrf52840_m2
-    shield: corne_right
-include:
-  - board: nrf52840_m2
-    shield: corne_left
-  - board: nrf52840_m2
-    shield: corne_right
