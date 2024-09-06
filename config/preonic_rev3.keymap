@@ -50,11 +50,11 @@
         base_layer {
             label = "Base";
             bindings = <
-&none      &kp N1       &kp N2          &kp N3          &kp N4            &kp N5     &kp N6   &kp N7        &kp N8              &kp N9            &kp N0             &kp DEL
-&kp TAB    &kp Q        &kp D           &kp H           &kp W             &kp B      &kp J    &kp F         &kp U               &kp P             &kp RIGHT_BRACKET  &none
-&kp ESC    &kp A        &kp S           &kp R           &mt LEFT_SHIFT T  &kp G      &kp Z    &mt RSHIFT N  &kp E               &kp O             &kp I              &kp MINUS
-&kp LSHFT  &mt LCTRL Y  &mt LEFT_ALT X  &mt LEFT_GUI C  &kp M             &kp V      &kp K    &kp L         &mt LS(RGUI) COMMA  &mt LEFT_ALT DOT  &mt RCTRL FSLH     &kp ENTER
-&kp LCTRL  &none        &none           &mo 1           &mo 3             &kp SPACE  &kp RET  &mo 2         &kp LEFT_SHIFT      &none             &none              &none
+&none      &kp N1       &kp N2          &kp N3          &kp N4        &kp N5     &kp N6         &kp N7        &kp N8              &kp N9            &kp N0             &kp DEL
+&kp TAB    &kp Q        &kp D           &kp H           &kp W         &kp B      &kp J          &kp F         &kp U               &kp P             &kp RIGHT_BRACKET  &none
+&kp ESC    &kp A        &kp S           &kp R           &kp T         &kp G      &kp Z          &kp N         &kp E               &kp O             &kp I              &kp MINUS
+&kp LSHFT  &mt LCTRL Y  &mt LEFT_ALT X  &mt LEFT_GUI C  &mt LSHIFT M  &kp V      &kp K          &mt RSHIFT L  &mt LS(RGUI) COMMA  &mt LEFT_ALT DOT  &mt RCTRL FSLH     &kp ENTER
+&kp LCTRL  &none        &none           &mo 1           &mo 3         &kp SPACE  &kp BACKSPACE  &mo 2         &kp LEFT_SHIFT      &none             &none              &none
             >;
         };
 
@@ -83,11 +83,11 @@
         num {
             label = "Sym";
             bindings = <
-&none  &none      &none         &none         &none       &none         &none          &none         &none   &none         &none       &none
-&none  &none      &none         &none         &none       &none         &kp RA(N7)     &kp N7        &kp N8  &kp N9        &kp LS(N3)  &none
-&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp UP_ARROW  &kp LS(N0)     &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp LS(N1)  &none
-&none  &none      &none         &none         &none       &none         &kp LS(N6)     &kp N1        &kp N2  &kp N3        &kp LS(N5)  &none
-&none  &none      &none         &trans        &trans      &kp SPACE     &kp BACKSPACE  &mo 4         &kp N0  &none         &none       &none
+&none  &none      &none         &none         &none       &none         &none       &none         &none   &none         &none       &none
+&none  &none      &none         &none         &none       &none         &kp RA(N7)  &kp N7        &kp N8  &kp N9        &kp LS(N3)  &none
+&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp UP_ARROW  &kp LS(N0)  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp LS(N1)  &none
+&none  &none      &none         &none         &none       &none         &kp LS(N6)  &kp N1        &kp N2  &kp N3        &kp LS(N5)  &none
+&none  &none      &none         &trans        &trans      &kp SPACE     &kp ENTER   &mo 4         &kp N0  &none         &none       &none
             >;
         };
 
