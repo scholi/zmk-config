@@ -21,9 +21,7 @@
 #define U_UNDO  LC(Z)
 #define U_REDO  LC(LS(Z))
 
-&mt {
-    tapping-term-ms = <400>;
-};
+&mt { tapping-term-ms = <400>; };
 
 / {
     chosen { zmk,matrix-transform = &layout_grid_transform; };
@@ -87,8 +85,8 @@
         num {
             label = "Sym";
             bindings = <
-&none  &none      &none         &none         &none       &none         &none       &none         &none   &none         &none       &none
-&none  &none      &none         &none         &none       &none         &kp LS(N7)  &kp N7        &kp N8  &kp N9        &kp LS(N3)  &none
+&none  &none      &none         &none         &none       &none         &none       &none         &none   &none         &none       &sys_reset
+&none  &none      &none         &none         &none       &none         &kp LS(N7)  &kp N7        &kp N8  &kp N9        &kp LS(N3)  &bootloader
 &none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp UP_ARROW  &kp LS(N0)  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp LS(N1)  &none
 &none  &none      &none         &none         &none       &none         &kp LS(N6)  &kp N1        &kp N2  &kp N3        &kp LS(N5)  &none
 &none  &none      &none         &trans        &trans      &kp SPACE     &kp ENTER   &mo 4         &kp N0  &none         &none       &none
@@ -98,11 +96,11 @@
         ffnun_layer {
             label = "Fun";
             bindings = <
-&none   &none         &none         &none         &none             &none         &none   &none   &none   &none   &none       &none
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4  &trans  &trans  &trans  &trans  &sys_reset  &trans
-&trans  &trans        &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &trans        &trans  &trans  &trans  &trans  &trans      &trans
-&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &trans            &kp K_MENU    &trans  &trans  &trans  &trans  &trans      &trans
-&none   &none         &none         &trans        &trans            &trans        &trans  &trans  &trans  &none   &none       &none
+&none   &none         &none         &none         &none             &none         &none   &none   &none   &none   &none        &none
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4  &trans  &trans  &trans  &trans  &bootloader  &trans
+&trans  &trans        &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &trans        &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &trans            &kp K_MENU    &trans  &trans  &trans  &trans  &trans       &trans
+&none   &none         &none         &trans        &trans            &trans        &trans  &trans  &trans  &none   &none        &none
             >;
         };
     };
