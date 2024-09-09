@@ -81,6 +81,11 @@
             bindings = <&e_hat>;
             key-positions = <33 32 31>;
         };
+
+        YN {
+            bindings = <&kp LS(N0)>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
