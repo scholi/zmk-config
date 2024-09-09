@@ -21,9 +21,34 @@
             bindings = <&kp F24>;
             key-positions = <3 4>;
         };
+
+        a_grave {
+            bindings = <&kp LS(SINGLE_QUOTE)>;
+            key-positions = <13 25>;
+        };
+
+        e_aigu {
+            bindings = <&kp LS(SEMICOLON)>;
+            key-positions = <20 8>;
+        };
+
+        e_grave {
+            bindings = <&kp LBRC>;
+            key-positions = <20 32>;
+        };
+
+        hat {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 22>;
+        };
+
+        e_hat {
+            bindings = <&e_hat>;
+            key-positions = <21 22 20>;
+        };
     };
 
-     macros {
+    macros {
         double_arrow: double_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -64,10 +89,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q        &kp D           &kp H           &kp W             &kp B        &kp J    &kp F         &kp U               &kp P             &kp RIGHT_BRACKET  &none
-&none  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI R  &mt LSHIFT T      &kp G        &kp Z    &mt RSHIFT N  &mt RIGHT_GUI E     &mt LEFT_ALT O    &mt RCTRL I        &none
-&none  &kp Y        &kp X           &kp C           &kp M             &kp V        &kp K    &kp L         &kp COMMA           &mt RALT DOT      &kp FSLH           &none
-                                    &mo 1           &mo 3             &kp SPACE    &kp RET  &mo 2         &kp LEFT_SHIFT
+&none  &kp Q        &kp D           &kp H           &kp W         &kp B        &kp J    &kp F         &kp U            &kp P           &kp RIGHT_BRACKET  &none
+&none  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI R  &mt LSHIFT T  &kp G        &kp Z    &mt RSHIFT N  &mt RIGHT_GUI E  &mt LEFT_ALT O  &mt RCTRL I        &none
+&none  &kp Y        &kp X           &kp C           &kp M         &kp V        &kp K    &kp L         &kp COMMA        &mt RALT DOT    &kp FSLH           &none
+                                    &mo 1           &mo 3         &kp SPACE    &kp RET  &mo 2         &kp LEFT_SHIFT
             >;
         };
 
