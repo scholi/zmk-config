@@ -59,7 +59,7 @@
 
         RT {
             bindings = <&kp E>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
         };
 
         TG {
