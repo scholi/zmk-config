@@ -46,6 +46,76 @@
             bindings = <&e_hat>;
             key-positions = <21 22 20>;
         };
+
+        AS {
+            bindings = <&kp I>;
+            key-positions = <13 14>;
+        };
+
+        SR {
+            bindings = <&kp O>;
+            key-positions = <14 15>;
+        };
+
+        RT {
+            bindings = <&kp E>;
+            key-positions = <14 15>;
+        };
+
+        TG {
+            bindings = <&kp N>;
+            key-positions = <16 17>;
+        };
+
+        MV {
+            bindings = <&kp K>;
+            key-positions = <29 28>;
+        };
+
+        CM {
+            bindings = <&kp L>;
+            key-positions = <28 27>;
+        };
+
+        XC {
+            bindings = <&kp COMMA>;
+            key-positions = <26 27>;
+        };
+
+        ZX {
+            bindings = <&kp DOT>;
+            key-positions = <25 26>;
+        };
+
+        ZC {
+            bindings = <&kp SLASH>;
+            key-positions = <25 27>;
+        };
+
+        QD {
+            bindings = <&kp P>;
+            key-positions = <2 1>;
+        };
+
+        DH {
+            bindings = <&kp U>;
+            key-positions = <2 3>;
+        };
+
+        WB {
+            bindings = <&kp F>;
+            key-positions = <4 5>;
+        };
+
+        QH {
+            bindings = <&kp Z>;
+            key-positions = <1 3>;
+        };
+
+        DW {
+            bindings = <&kp J>;
+            key-positions = <2 4>;
+        };
     };
 
     macros {
@@ -142,6 +212,24 @@
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &trans            &kp K_MENU      &trans  &trans  &trans  &trans  &trans      &trans
                                     &trans        &trans            &trans          &trans  &trans  &trans
             >;
+        };
+
+        OneHand {
+            bindings = <
+&kp SEMICOLON     &kp MINUS          &kp N7  &kp N8  &kp N9  &sk LCTRL       &trans  &trans  &trans  &trans  &trans  &trans
+&kp SINGLE_QUOTE  &kp NUHS           &kp N4  &kp N5  &kp N6  &sk LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N1  &kp N2  &kp N3  &sk LSHFT       &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans  &trans  &kp N0          &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        OneHand {
+            if-layers = <1 3>;
+            then-layer = <5>;
         };
     };
 };
