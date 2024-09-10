@@ -216,10 +216,10 @@
 
         OneHand {
             bindings = <
-&kp SEMICOLON     &kp MINUS          &kp N7  &kp N8  &kp N9  &sk LCTRL       &trans  &trans  &trans  &trans  &trans  &trans
-&kp SINGLE_QUOTE  &kp NUHS           &kp N4  &kp N5  &kp N6  &sk LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N1  &kp N2  &kp N3  &sk LSHFT       &trans  &trans  &trans  &trans  &trans  &trans
-                                             &trans  &trans  &kp N0          &trans  &trans  &trans
+&none  &mt SEMICOLON MINUS             &kp N7  &kp N8  &kp N9  &sk LCTRL        &trans  &trans  &trans  &trans  &trans  &trans
+&none  &mt SINGLE_QUOTE NUHS           &kp N4  &kp N5  &kp N6  &sk RIGHT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &mt LEFT_BRACKET RIGHT_BRACKET  &kp N1  &kp N2  &kp N3  &sk LSHFT        &trans  &trans  &trans  &trans  &trans  &trans
+                                               &trans  &trans  &kp N0           &trans  &trans  &trans
             >;
         };
     };
