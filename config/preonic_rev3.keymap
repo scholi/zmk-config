@@ -157,7 +157,7 @@
         num {
             label = "Sym";
             bindings = <
-&none  &none      &none         &none         &none       &none         &none       &none         &none   &none         &none       &sys_reset
+&none  &to 5      &none         &none         &none       &none         &none       &none         &none   &none         &none       &sys_reset
 &none  &none      &none         &none         &none       &none         &kp LS(N7)  &kp N7        &kp N8  &kp N9        &kp LS(N3)  &bootloader
 &none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp UP_ARROW  &kp LS(N0)  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp LS(N1)  &double_arrow
 &none  &none      &none         &none         &none       &none         &kp LS(N6)  &kp N1        &kp N2  &kp N3        &kp LS(N5)  &none
@@ -173,6 +173,16 @@
 &trans  &trans        &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &trans        &trans  &trans  &trans  &osch   &trans       &trans
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &trans            &kp K_MENU    &trans  &trans  &trans  &trans  &none        &trans
 &none   &none         &none         &trans        &trans            &trans        &trans  &trans  &trans  &none   &none        &none
+            >;
+        };
+
+        qwertz {
+            bindings = <
+&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4  &kp N5     &kp N6    &kp N7  &kp N8     &kp N9    &kp N0     &kp SEMI
+&kp TAB    &kp Q   &kp W     &kp E     &kp R   &kp T      &kp Z     &kp U   &kp I      &kp O     &kp P      &kp EQUAL
+&kp CAPS   &kp A   &kp S     &kp D     &kp F   &kp G      &kp H     &kp J   &kp K      &kp L     &kp RBKT   &kp MINUS
+&kp LSHFT  &kp Y   &kp X     &kp C     &kp V   &kp B      &kp N     &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp ENTER
+&kp LCTRL  &trans  &kp LALT  &kp LGUI  &trans  &kp SPACE  &kp BSPC  &trans  &kp APOS   &kp BSLH  &kp GRAVE  &to 0
             >;
         };
     };
