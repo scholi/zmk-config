@@ -124,11 +124,11 @@
         base_layer {
             label = "Base";
             bindings = <
-&none      &kp N1       &kp N2          &kp N3          &kp N4        &kp N5     &kp N6         &kp N7        &kp N8           &kp N9          &kp N0             &kp DEL
-&kp TAB    &kp Q        &kp D           &kp H           &kp W         &kp B      &kp J          &kp F         &kp U            &kp P           &kp RIGHT_BRACKET  &none
-&kp ESC    &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI R  &mt LSHIFT T  &kp G      &kp Z          &mt RSHIFT N  &mt RIGHT_GUI E  &mt LEFT_ALT O  &mt RCTRL I        &kp MINUS
-&kp LSHFT  &kp Y        &kp X           &kp C           &kp M         &kp V      &kp K          &kp L         &kp COMMA        &mt RALT DOT    &kp FSLH           &kp ENTER
-&kp LCTRL  &none        &none           &mo 1           &mo 3         &kp SPACE  &kp BACKSPACE  &mo 2         &mo 4            &none           &none              &none
+&sk LS(LA(LC(LGUI)))  &kp N1       &kp N2          &kp N3          &kp N4        &kp N5     &kp N6         &kp N7        &kp N8           &kp N9          &kp N0             &kp DEL
+&kp TAB               &kp Q        &kp D           &kp H           &kp W         &kp B      &kp J          &kp F         &kp U            &kp P           &kp RIGHT_BRACKET  &none
+&kp ESC               &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI R  &mt LSHIFT T  &kp G      &kp Z          &mt RSHIFT N  &mt RIGHT_GUI E  &mt LEFT_ALT O  &mt RCTRL I        &kp MINUS
+&kp LSHFT             &kp Y        &kp X           &kp C           &kp M         &kp V      &kp K          &kp L         &kp COMMA        &mt RALT DOT    &kp FSLH           &kp ENTER
+&kp LCTRL             &none        &none           &mo 1           &mo 3         &kp SPACE  &kp BACKSPACE  &mo 2         &mo 4            &none           &none              &none
             >;
         };
 
@@ -178,11 +178,11 @@
 
         qwertz {
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4  &kp N5     &kp N6    &kp N7  &kp N8     &kp N9    &kp N0     &kp SEMI
-&kp TAB    &kp Q   &kp W     &kp E     &kp R   &kp T      &kp Z     &kp U   &kp I      &kp O     &kp P      &kp EQUAL
-&kp CAPS   &kp A   &kp S     &kp D     &kp F   &kp G      &kp H     &kp J   &kp K      &kp L     &kp RBKT   &kp MINUS
-&kp LSHFT  &kp Y   &kp X     &kp C     &kp V   &kp B      &kp N     &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp ENTER
-&kp LCTRL  &trans  &kp LALT  &kp LGUI  &trans  &kp SPACE  &kp BSPC  &trans  &kp APOS   &kp BSLH  &kp GRAVE  &to 0
+&sk LS(LA(LC(LGUI)))  &kp N1  &kp N2    &kp N3    &kp N4  &kp N5     &kp N6    &kp N7  &kp N8     &kp N9    &kp N0     &kp SEMI
+&kp TAB               &kp Q   &kp W     &kp E     &kp R   &kp T      &kp Z     &kp U   &kp I      &kp O     &kp P      &kp EQUAL
+&kp ESC               &kp A   &kp S     &kp D     &kp F   &kp G      &kp H     &kp J   &kp K      &kp L     &kp RBKT   &kp MINUS
+&kp LSHFT             &kp Y   &kp X     &kp C     &kp V   &kp B      &kp N     &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp ENTER
+&kp LCTRL             &trans  &kp LALT  &kp LGUI  &trans  &kp SPACE  &kp BSPC  &trans  &kp APOS   &kp BSLH  &kp GRAVE  &to 0
             >;
         };
     };
