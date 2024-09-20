@@ -141,6 +141,16 @@
             bindings = <&kp N0>;
             key-positions = <26 27 28>;
         };
+
+        WG {
+            bindings = <&kp DELETE>;
+            key-positions = <4 17>;
+        };
+
+        ASR {
+            bindings = <&kp LC(FSLH)>;
+            key-positions = <12 13 14>;
+        };
     };
 
     macros {
@@ -223,10 +233,10 @@
 
         num {
             bindings = <
-&none  &none      &none         &none         &none       &none           &kp RA(N7)  &kp N7        &kp N8  &kp N9        &kp LS(N3)  &none
-&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp UP_ARROW    &kp LS(N0)  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp LS(N1)  &none
-&none  &none      &none         &none         &none       &none           &kp LS(N6)  &kp N1        &kp N2  &kp N3        &kp LS(N5)  &none
-                                &trans        &trans      &kp SPACE       &kp ENTER   &trans        &kp N0
+&none  &none      &none         &sk LS(LA(LCTRL))  &sk LS(LA(LC(LEFT_GUI)))  &none           &kp RA(N7)  &kp N7        &kp N8  &kp N9        &kp LS(N3)  &none
+&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI       &kp LSHIFT                &kp UP_ARROW    &kp LS(N0)  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp LS(N1)  &none
+&none  &none      &none         &none              &none                     &none           &kp LS(N6)  &kp N1        &kp N2  &kp N3        &kp LS(N5)  &none
+                                &trans             &trans                    &kp SPACE       &kp ENTER   &trans        &kp N0
             >;
         };
 
