@@ -163,18 +163,18 @@
         };
 
         a_um {
-            bindings = <&kp SEMI>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <1 13>;
         };
 
         o_um {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp SEMI>;
             key-positions = <9 21>;
         };
 
         u_um {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 10>;
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <9 8>;
         };
 
         egal {
@@ -185,6 +185,11 @@
         apost {
             bindings = <&kp MINUS>;
             key-positions = <19 22>;
+        };
+
+        parag {
+            bindings = <&kp GRAVE>;
+            key-positions = <9 10 8>;
         };
     };
 
