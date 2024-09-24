@@ -271,7 +271,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp LS(MINUS)     &kp RA(NUMBER_2)  &kp RA(SQT)   &kp RA(NUHS)  &kp PRCNT        &kp EQUAL      &kp F7  &kp F8    &kp F9  &kp F10  &none
+&none  &kp LS(MINUS)     &kp RA(NUMBER_2)  &kp RA(SQT)   &kp RA(NUHS)  &kp RA(N7)       &kp EQUAL      &kp F7  &kp F8    &kp F9  &kp F10  &none
 &none  &kp RA(NUMBER_3)  &kp NUHS          &kp LS(N8)    &kp LS(N9)    &kp MINUS        &kp RA(MINUS)  &kp F4  &kp F5    &kp F6  &kp F11  &none
 &none  &kp RA(NUBS)      &kp LS(NUMBER_2)  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(EQUAL)    &kp LS(EQUAL)  &kp F1  &kp F2    &kp F3  &kp F12  &none
                                            &kp NUBS      &kp LS(NUBS)  &kp ESC          &kp RET        &none   &kp RALT
