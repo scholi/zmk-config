@@ -287,7 +287,7 @@
             >;
         };
 
-        Fn {
+        Media {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4    &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &trans
 &trans  &trans        &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE   &trans          &kp KP_EQUAL   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans
@@ -313,6 +313,15 @@
                                &trans          &trans         &trans          &trans  &trans  &trans
             >;
         };
+
+        FN {
+            bindings = <
+&trans  &sl 4   &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans     &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
@@ -324,8 +333,13 @@
         };
 
         OneHandSym {
-            if-layers = <5 1>;
+            if-layers = <1 5>;
             then-layer = <2>;
+        };
+
+        OneHandFn {
+            if-layers = <1 3>;
+            then-layer = <7>;
         };
     };
 };
