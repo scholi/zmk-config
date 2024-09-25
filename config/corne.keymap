@@ -322,6 +322,15 @@
                         &trans  &trans  &trans     &trans  &trans  &trans
             >;
         };
+
+        OneHandSym {
+            bindings = <
+&none  &kp LS(MINUS)     &kp RA(NUMBER_2)  &kp RA(SQT)   &kp RA(NUHS)  &kp RA(N7)       &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp RA(NUMBER_3)  &kp NUHS          &kp LS(N8)    &kp LS(N9)    &kp RA(NUBS)     &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans            &kp LS(NUMBER_2)  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(EQUAL)    &trans  &trans  &trans  &trans  &trans  &none
+                                           &trans        &kp NUBS      &kp LS(NUBS)     &trans  &none   &trans
+            >;
+        };
     };
 
     conditional_layers {
@@ -334,7 +343,7 @@
 
         OneHandSym {
             if-layers = <1 5>;
-            then-layer = <2>;
+            then-layer = <8>;
         };
 
         OneHandFn {
