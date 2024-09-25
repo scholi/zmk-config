@@ -243,7 +243,7 @@
             bindings = <
 &none  &kp Q        &kp D           &kp H           &kp W         &kp B        &kp J          &kp F         &kp U            &kp P           &kp RIGHT_BRACKET  &none
 &none  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI R  &mt LSHIFT T  &kp G        &kp Z          &mt RSHIFT N  &mt RIGHT_GUI E  &mt LEFT_ALT O  &mt RCTRL I        &none
-&none  &kp Y        &kp X           &kp C           &kp M         &kp V        &kp K          &kp L         &kp COMMA        &mt RALT DOT    &kp FSLH           &none
+&none  &lt 5 Y      &kp X           &kp C           &kp M         &kp V        &kp K          &kp L         &kp COMMA        &mt RALT DOT    &kp FSLH           &none
                                     &mo 1           &mo 3         &kp SPACE    &kp BACKSPACE  &mo 2         &mo 4
             >;
         };
@@ -298,10 +298,19 @@
 
         OneHand {
             bindings = <
-&none  &mt SEMICOLON MINUS             &kp N7  &kp N8  &kp N9  &sk LCTRL        &trans  &trans  &trans  &trans  &trans  &trans
-&none  &mt SINGLE_QUOTE NUHS           &kp N4  &kp N5  &kp N6  &sk RIGHT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
-&none  &mt LEFT_BRACKET RIGHT_BRACKET  &kp N1  &kp N2  &kp N3  &sk LSHFT        &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans  &trans  &kp N0           &trans  &trans  &trans
+&none  &kp RIGHT_BRACKET  &kp N7  &kp N8  &kp N9  &sk LCTRL    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp MINUS          &kp N4  &kp N5  &kp N6  &sk RALT     &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none              &kp N1  &kp N2  &kp N3  &sk LSHFT    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &kp N0       &trans  &trans  &trans
+            >;
+        };
+
+        one_hand_nav {
+            bindings = <
+&trans  &trans  &kp HOME       &kp UP_ARROW    &kp END        &sk LCTRL       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &sk LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(EQUAL)  &kp EQUAL       &kp RA(MINUS)  &sk LSHIFT      &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans          &trans         &trans          &trans  &trans  &trans
             >;
         };
     };
