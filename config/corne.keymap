@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 &mt {
     tapping-term-ms = <300>;
@@ -271,7 +272,7 @@
             bindings = <
 &none  &bt BT_PRV  &bt BT_NXT    &none         &none       &none           &kp PAGE_UP    &kp HOME        &kp UP_ARROW   &kp END      &kp INS       &none
 &none  &kp LCTRL   &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp UP_ARROW    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &kp DEL       &none
-&none  &none       &none         &none         &caps_word  &none           &trans         &semiColAtEnd   &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &none
+&none  &none       &none         &osch         &caps_word  &none           &trans         &semiColAtEnd   &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &none
                                  &trans        &trans      &kp SPACE       &kp TAB        &trans          &trans
             >;
         };
@@ -314,7 +315,7 @@
 &none  &kp RIGHT_BRACKET  &kp N7  &kp N8  &kp N9  &sk LCTRL    &trans  &trans  &trans  &trans  &trans  &trans
 &none  &kp MINUS          &kp N4  &kp N5  &kp N6  &sk RALT     &trans  &trans  &trans  &trans  &trans  &trans
 &none  &none              &kp N1  &kp N2  &kp N3  &sk LSHFT    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans  &trans  &kp N0       &trans  &trans  &trans
+                                  &mo 9   &trans  &kp N0       &trans  &trans  &trans
             >;
         };
 
@@ -342,6 +343,15 @@
 &none  &kp RA(NUMBER_3)  &kp NUHS          &kp LS(N8)    &kp LS(N9)    &kp RA(NUBS)     &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans            &kp LS(NUMBER_2)  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(EQUAL)    &trans  &trans  &trans  &trans  &trans  &none
                                            &trans        &kp NUBS      &kp LS(NUBS)     &trans  &none   &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans     &trans        &trans        &trans          &trans    &msc SCROLL_UP    &mkp MB1          &mmv MOVE_UP    &mkp MB3           &mkp MB4  &trans
+&trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &trans    &msc SCROLL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mkp MB5  &trans
+&trans  &trans     &trans        &trans        &trans          &trans    &trans            &msc SCROLL_LEFT  &mkp MB3        &msc SCROLL_RIGHT  &trans    &trans
+                                 &trans        &trans          &trans    &trans            &trans            &trans
             >;
         };
     };
