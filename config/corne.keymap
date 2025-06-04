@@ -197,6 +197,11 @@
             key-positions = <16 17>;
             layers = <3>;
         };
+
+        clearBT {
+            bindings = <&bt BT_CLR>;
+            key-positions = <1 10>;
+        };
     };
 
     macros {
