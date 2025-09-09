@@ -325,10 +325,10 @@
 
         one_hand_nav {
             bindings = <
-&trans  &trans  &kp HOME       &kp UP_ARROW    &kp END        &sk LCTRL       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &sk LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(EQUAL)  &kp EQUAL       &kp RA(MINUS)  &sk LSHIFT      &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans          &trans         &trans          &trans  &trans  &trans
+&trans  &kp PAGE_UP    &kp HOME       &kp UP_ARROW    &kp END        &sk LCTRL       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_DOWN  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &sk LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &kp LS(EQUAL)  &kp EQUAL       &kp RA(MINUS)  &sk LSHIFT      &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans          &trans         &trans          &trans  &trans  &trans
             >;
         };
 
