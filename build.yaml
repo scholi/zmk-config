@@ -18,8 +18,8 @@
 #
 ---
 include:
-  - board: nice_nano/nrf52840
+  - board: nice_nano@2//zmk
     shield: corne_left
-  - board: nice_nano/nrf52840
+  - board: nice_nano@2//zmk
     shield: corne_right
   - board: preonic_rev3
