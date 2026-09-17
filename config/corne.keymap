@@ -277,7 +277,7 @@
 &none  &bt BT_PRV  &bt BT_NXT    &none         &none       &none           &kp PAGE_UP    &kp HOME        &kp UP_ARROW   &kp END      &kp INS       &none
 &none  &kp LCTRL   &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp UP_ARROW    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &kp DEL       &none
 &none  &none       &none         &osch         &caps_word  &none           &trans         &semiColAtEnd   &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &none
-                                 &trans        &trans      &kp SPACE       &kp TAB        &trans          &trans
+                                 &trans        &trans      &kp SPACE       &kp TAB        &sl 9           &trans
             >;
         };
 
@@ -347,6 +347,15 @@
 &none  &kp RA(NUMBER_3)  &kp NUHS          &kp LS(N8)    &kp LS(N9)    &kp RA(NUBS)     &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans            &kp LS(NUMBER_2)  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(EQUAL)    &trans  &trans  &trans  &trans  &trans  &none
                                            &trans        &kp NUBS      &kp LS(NUBS)     &trans  &none   &trans
+            >;
+        };
+
+        Fext {
+            bindings = <
+&trans  &trans   &trans   &trans   &kp F23  &trans     &trans   &kp F24  &trans   &trans   &trans   &trans
+&trans  &kp F13  &kp F14  &kp F15  &kp F16  &kp F17    &kp F18  &kp F19  &kp F20  &kp F21  &kp F22  &trans
+&trans  &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans   &trans
+                          &trans   &trans   &trans     &trans   &trans   &trans
             >;
         };
     };
